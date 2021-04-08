@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/***************** Homepage Styles ****************/
+body {
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+#homepage_desktop {
+  display: none;
+}
+
+#homepage {
+  background-image: url("images/mobile_images/bg_homepage_mobile.jpg");
+  background-size: cover;
+}
+
+#homepage_logo {
+  width: 100%;
+  max-width: 828px;
+}
+
+#top_section h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#beetlejuice_grin {
+  width: 100%;
+  max-width: 828px;
+  text-align: center;
+}
+
+#gravestone_container {
+  display: flex;
+  margin-top: -260px;
+}
+
+/* #gravestone_container a img{
+  width: 50%;
+  max-width: 400px;
+} */
+
+#tombstone_left {
+  width: 50%;
+  max-width: 400px;
+  z-index: 3;
+}
+
+#tombstone_right {
+  width: 50%;
+  max-width: 400px;
+  z-index: 2;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px 5%;
+  text-align: center;
+  font-size: 1em;
+}
+/***************************** Homepage Styles ********************************/
+
+/********************** START 600PX MIN-WIDTH QUERY ***************************/
+@media (min-width: 600px) {
+  #homepage {
+    background-image: url(images/desktop_images/background.jpg);
+    background-size: cover;
+  }
+
+  #homepage_mobile {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+/********************** END 600PX MIN-WIDTH QUERY ***************************/
+
+/********************** START 800PX MIN-WIDTH QUERY ***************************/
+@media (min-width: 800px) {
+  #homepage_mobile {
+    display: none;
+  }
+
+  #homepage_desktop {
+    display: block;
+  }
+
+  /* #main_section_desktop {
+    display: flex;
+  }
+
+  #tombstone_left_desktop, #tombstone_right_desktop {
+    width: 30%;
+  }
+
+  #beetlejuice_grin_desktop {
+    width: 40%;
+  } */
+
+
+}
