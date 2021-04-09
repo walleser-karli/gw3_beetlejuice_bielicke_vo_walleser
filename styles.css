@@ -8,9 +8,20 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
 /***************** Homepage Styles ****************/
 body {
   font-family: 'IM Fell Double Pica', serif;
+	color: white;
 }
 
 #homepage_desktop {
@@ -68,6 +79,47 @@ footer {
   text-align: center;
   font-size: 1em;
 }
+
+/***************** Contact Page Styles ****************/
+#wallpaper {
+	background-image: url("images/background_texture_desktop.jpg");
+}
+
+.contact-logo {
+	text-align: center;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.center {
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
+	font-size: 1.5rem;
+}
+
+#summoning-spot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	font-family: 'IM Fell Double Pica', serif;
+}
+
+.sandworm {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0;
+	background-color: transparent;
+}
+
+
 /***************************** Homepage Styles ********************************/
 
 /********************** START 600PX MIN-WIDTH QUERY ***************************/

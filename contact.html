@@ -26,7 +26,7 @@
 
 	</head>
 
-	<body>
+	<body class = "site">
 		<nav class = "desktop-nav">
 			<ul>
 				<li><a href = "resume.html">Experience</a></li>
@@ -43,30 +43,37 @@
 			</ul>
 		</nav>
 
-		<main class="site-content">
+		<div id = "wallpaper">
+			<main class="site-content">
 
-			<h1>Summon Betelgeuse</h1>
+				<h1><figure class = "contact-logo"><img src = "images/contact-logo.png" width = "767" title = "Contact Betelgeuse" alt = "'Betelgeuse Contact Form' logo" /></figure></h1>
 
-			<audio id="callAudio" autobuffer>
-				<source src="audio/betelgeuse.ogg" type="audio/ogg">
-				<source src="audio/belelgeuse.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
+				<audio id="callAudio" autobuffer>
+					<source src="audio/betelgeuse.ogg" type="audio/ogg">
+					<source src="audio/belelgeuse.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
 
-			<div id = "contact-form" class="center">
-				<a id = "clickable"><button onclick = "playAudio()" type = "button">Betelgeuse</button></a>
-			</div>
+				<div id = "contact-form" class="center">
+					<figure id = "summoning-spot"><img src = "images/mirror.png." width = "1000" title = "Summoning Mirror" alt = "A dark and creepy mirror" /></figure>
+					<div class= "center" id="counter"></div>
+					<p>Though we caution you be wary, <br>If you'd venture someplace scary <br>Turn these ghostly hauntings loose. <br> Call three times...</p>
+					<a id = "clickable"><button onclick = "playAudio()" type = "button">Summon!</button></a>
+				</div>
+			</main>
+			<footer class = "sandworm">
+				<figure class = "sandworm-left"><img src = "images/sandworm-left.png" width =	"278" title = "Sandworm Tail" alt = "Part of a slithery sandworm" /></figure>
+				<figure class = "sandworm-right"><img src = "images/sandworm-right.png" width = "320" title = "Sandworm Head" alt = "The head and open mouth of a sandworm" /></figure>
+			</footer>
+		</div>
 
-			<div class= "center" id="counter"></div>
-
-		</main>
-
-		<div id = "betelgeuse"></div>
 
 <!--Betelgeuse Button JS-->
 	<script src="js/contact-betelgeuse.js"></script>
 <!--Backstretch-->
 	<script src="js/jquery.backstretch.min.js"></script>
+<!--General Javascript-->
+	<script src = "js/main.js"></script>
 
 
 	</body>
