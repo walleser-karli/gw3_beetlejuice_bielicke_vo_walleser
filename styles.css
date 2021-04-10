@@ -18,11 +18,17 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   flex: 1;
 }
 
-/***************** Homepage Styles ****************/
 body {
   font-family: 'IM Fell Double Pica', serif;
 	color: white;
+	background-color: 333333;
 }
+
+figure img {
+	width: 100%;
+}
+
+/***************** Homepage Styles ****************/
 
 #homepage_desktop {
   display: none;
@@ -82,11 +88,43 @@ footer {
 
 /***************** Contact Page Styles ****************/
 #wallpaper {
-	background-image: url("images/background_texture_desktop.jpg");
+	background: url("images/background_texture_desktop.jpg") no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.roach {
+	position: absolute;
+	width: 30%;
+	max-width: 300px;
+}
+
+.roach1 {
+	transform: rotateZ(-98deg);
+	top: -10vw;
+	left: 50%;
+}
+
+.roach2 {
+	transform: rotateZ(87deg);
+	top: 100px;
+	left: -8%;
+}
+
+.roach3 {
+	bottom: 25%;
+	right: -10%;
 }
 
 .contact-logo {
-	text-align: center;
+	margin: auto;
+	width: 98%;
+	max-width: 767px;
+	position: relative;
+}
+
+.contact-logo-image {
+	position: absolute;
 }
 
 #contact-form {
@@ -101,14 +139,45 @@ footer {
 	font-size: 1.5rem;
 }
 
+.ghost-mirror {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	width: 98%;
+	max-width: 1000px;
+}
+
+#counter {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 10vw;
+}
+
 #summoning-spot {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 0.7rem;
+}
+
+#summoning-spot {
+	padding: 25px 3%;
 }
 
 button {
 	font-family: 'IM Fell Double Pica', serif;
+	font-size: 2rem;
+	padding: 5px 20px;
+	border-radius: 10px;
+	box-shadow: -3px 3px 10px black;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	transform: scale(1.1);
 }
 
 .sandworm {
@@ -117,6 +186,24 @@ button {
 	align-items: flex-end;
 	padding: 0;
 	background-color: transparent;
+	overflow: hidden;
+}
+
+.sandworm-left, .sandworm-right {
+	position: relative;
+	bottom: -5px;
+}
+
+.sandworm-left img {
+	animation: sandwormleft;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.sandworm-right img {
+	animation: sandwormright;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 
 
@@ -160,4 +247,64 @@ button {
   } */
 
 
+}
+
+@keyframes sandwormleft {
+	0% {
+		transform: skewY(0deg);
+	}
+	15% {
+		transform: skewY(3deg);
+	}
+	30% {
+		transform: skewY(5deg);
+	}
+	45% {
+		transform: skewY(8deg);
+	}
+	50% {
+		transform: skewY(10deg);
+	}
+	55% {
+		transform: skewY(8deg);
+	}
+	70% {
+		transform: skewY(5deg);
+	}
+	85% {
+		transform: skewY(3deg);
+	}
+	100% {
+		transform: skewY(0deg);
+	}
+}
+
+@keyframes sandwormright {
+	0% {
+		transform: skewX(0deg);
+	}
+	15% {
+		transform: skewX(3deg);
+	}
+	30% {
+		transform: skewX(5deg);
+	}
+	45% {
+		transform: skewX(8deg);
+	}
+	50% {
+		transform: skewX(10deg);
+	}
+	55% {
+		transform: skewX(8deg);
+	}
+	70% {
+		transform: skewX(5deg);
+	}
+	85% {
+		transform: skewX(3deg);
+	}
+	100% {
+		transform: skewX(0deg);
+	}
 }
