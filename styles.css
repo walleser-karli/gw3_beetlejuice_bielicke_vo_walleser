@@ -27,6 +27,10 @@ body {
   display: none;
 }
 
+#desktop_top_bar {
+  display: none;
+}
+
 #homepage {
   background-image: url("images/mobile_images/bg_homepage_mobile.jpg");
   background-size: cover;
@@ -84,6 +88,46 @@ footer {
 }
 /***************************** Homepage Styles ********************************/
 
+/***************************** Resume Styles ********************************/
+#resume {
+  background-image: url("images/mobile_images/background_texture_mobile.jpg");
+  background-size: cover;
+}
+
+#mobile_resume {
+  background-image: url("images/mobile_images/resume_paper_mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* max-height: 884px; */
+  height: 884px;
+  max-width: 497px;
+  width: 100%;
+}
+
+#mobile_resume img {
+  width: 100%;
+  max-width: 450px;
+}
+
+#resume_copy {
+  transform: rotate(-3deg);
+  padding-top: 56%;
+  padding-left: 16%;
+}
+
+mark {
+  background-color: black;
+  color: white;
+  padding: .5%;
+  font-size: 1em;
+}
+
+#resume_copy ul {
+  padding: 3%;
+  font-size: .95rem;
+}
+/***************************** Resume Styles ********************************/
+
 /********************** START 600PX MIN-WIDTH QUERY ***************************/
 @media (min-width: 600px) {
   #homepage {
@@ -101,25 +145,50 @@ footer {
 
 /********************** START 800PX MIN-WIDTH QUERY ***************************/
 @media (min-width: 800px) {
+  #mobile_top_bar {
+    display: none;
+  }
+
   #homepage_mobile {
     display: none;
+  }
+
+  #desktop_top_bar {
+    display: block;
   }
 
   #homepage_desktop {
     display: block;
   }
 
-  /* #main_section_desktop {
+  #top_section_desktop h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  #top_section_desktop h3 {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #top_section_desktop figure {
+    text-align: center;
+  }
+
+  #main_section_desktop {
     display: flex;
   }
 
   #tombstone_left_desktop, #tombstone_right_desktop {
-    width: 30%;
+    width: 33.333333333%;
   }
 
   #beetlejuice_grin_desktop {
-    width: 40%;
-  } */
+    width: 100%;
+    max-width: 500px;
+  }
 
 
 }
