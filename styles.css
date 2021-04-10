@@ -13,6 +13,16 @@ body {
   font-family: 'IM Fell Double Pica', serif;
 }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
+}
+
 #homepage_desktop {
   display: none;
 }
@@ -24,7 +34,11 @@ body {
 
 #homepage_logo {
   width: 100%;
-  max-width: 828px;
+  max-width: 420px;
+}
+
+.logo_figure {
+  text-align: center;
 }
 
 #top_section h2 {
@@ -35,7 +49,7 @@ body {
 
 #beetlejuice_grin {
   width: 100%;
-  max-width: 828px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -51,13 +65,13 @@ body {
 
 #tombstone_left {
   width: 50%;
-  max-width: 400px;
+  max-width: 200px;
   z-index: 3;
 }
 
 #tombstone_right {
   width: 50%;
-  max-width: 400px;
+  max-width: 200px;
   z-index: 2;
 }
 
@@ -73,7 +87,7 @@ footer {
 /********************** START 600PX MIN-WIDTH QUERY ***************************/
 @media (min-width: 600px) {
   #homepage {
-    background-image: url(images/desktop_images/background.jpg);
+    background-image: url("images/desktop_images/background.jpg");
     background-size: cover;
   }
 
