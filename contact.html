@@ -26,8 +26,8 @@
 
 	</head>
 
-	<body>
-		<nav class = "desktop-nav">
+	<body id = "wallpaper" class = "site">
+		<nav>
 			<ul>
 				<li><a href = "resume.html">Experience</a></li>
 				<li><a href = "index.html">Home</a></li>
@@ -35,38 +35,47 @@
 			</ul>
 		</nav>
 
-		<nav class = "mobile-nav">
-			<ul>
-				<li><a href = "resume.html">Experience</a></li>
-				<li><a href = "index.html">Home</a></li>
-				<li><a href="contact.html">Summon Today!></a></li>
-			</ul>
-		</nav>
+		<figure class = "roach roach1"><img src = "images/roach.png" width = 300 title = "Cockroach" alt = "A cockroach" /></figure>
+		<figure class = "roach roach2"><img src = "images/roach.png" width = 300 title = "Cockroach" alt = "A cockroach" /></figure>
+		<figure class = " roach roach3"><img src = "images/roach.png" width = 300 title = "Cockroach" alt = "A cockroach" /></figure>
 
 		<main class="site-content">
 
-			<h1>Summon Betelgeuse</h1>
+			<h1><figure class = "contact-logo"><img "contact-logo-img" src = "images/contact-logo.png" width = "767" title = "Contact Betelgeuse" alt = "'Betelgeuse Contact Form' logo" /></figure></h1>
 
 			<audio id="callAudio" autobuffer>
 				<source src="audio/betelgeuse.ogg" type="audio/ogg">
 				<source src="audio/belelgeuse.mp3" type="audio/mpeg">
 				Your browser does not support the audio element.
 			</audio>
+			<audio id ="showTimeAudio" autobuffer>
+				<source src='audio/showtime.ogg' type='audio/ogg'></source>
+				<source src='audio/showtime.mp3' type='audio/mpeg'></source>
+			</audio>
 
 			<div id = "contact-form" class="center">
-				<a id = "clickable"><button onclick = "playAudio()" type = "button">Betelgeuse</button></a>
+				<figure class = "ghost-mirror">
+					<img id = "mirror" src = "images/mirror.png." width = "1000" title = "Summoning Mirror" alt = "A dark and creepy mirror" />
+					<div class= "center" id="counter"></div>
+				</figure>
+				<div id = "summoningSpot">
+					<p>Though we caution you be wary, <br>If you'd venture someplace scary <br>Turn these ghostly hauntings loose. <br> Call three times...</p>
+					<a id = "clickable"><button onclick = "playAudio()" type = "button">Summon!</button></a>
+				</div>
 			</div>
-
-			<div class= "center" id="counter"></div>
-
 		</main>
+		<footer class = "sandworm">
+			<figure class = "sandworm-left"><img src = "images/sandworm-left.png" width =	"278" title = "Sandworm Tail" alt = "Part of a slithery sandworm" /></figure>
+			<figure class = "sandworm-right"><img src = "images/sandworm-right.png" width = "320" title = "Sandworm Head" alt = "The head and open mouth of a sandworm" /></figure>
+		</footer>
 
-		<div id = "betelgeuse"></div>
 
 <!--Betelgeuse Button JS-->
 	<script src="js/contact-betelgeuse.js"></script>
 <!--Backstretch-->
 	<script src="js/jquery.backstretch.min.js"></script>
+<!--General Javascript-->
+	<script src = "js/main.js"></script>
 
 
 	</body>
