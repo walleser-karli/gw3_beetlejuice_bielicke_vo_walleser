@@ -13,6 +13,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
   font-family: 'IM Fell Double Pica', serif;
 	color: white;
+	overflow-x: hidden;
 }
 
 .site {
@@ -27,6 +28,62 @@ body {
 
 figure img {
 	width: 100%;
+}
+
+/***********************************Slideout***********************************/
+#menu {
+	position: fixed;
+}
+
+.toggle-button {
+	max-width: 50px;
+	width: 15%;
+	padding: 3%;
+	cursor: pointer;
+}
+
+.toggle-button:hover {
+	animation: skull;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
 }
 
 /***************** Homepage Styles ****************/
@@ -138,7 +195,18 @@ mark {
 #wallpaper {
 	background: url("images/desktop_images/background_texture_desktop.jpg") no-repeat center;
 	background-size: cover;
-	overflow-x: hidden;
+	min-height: 100vh;
+}
+
+/* New sticky footer */
+.contact-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.flex-wrapper {
+	flex-grow: 1;
 }
 
 .roach {
@@ -321,6 +389,7 @@ button:hover {
 }
 
 /**********************************Animations**********************************/
+/* Sandworm */
 @keyframes sandwormleft {
 	0% {
 		transform: skewY(0deg);
@@ -378,5 +447,44 @@ button:hover {
 	}
 	100% {
 		transform: skewX(0deg);
+	}
+}
+
+/* Nav Skull */
+@keyframes skull{
+	0% {
+		transform: rotate(0)
+	}
+	10% {
+		transform: rotate(4deg)
+	}
+	20% {
+		transform: rotate(8deg)
+	}
+
+	30% {
+		transform: rotate(10deg)
+	}
+	40% {
+		transform: rotate(6deg)
+	}
+	50% {
+		transform: rotate(2deg)
+	}
+
+	60% {
+		transform: rotate(-2deg)
+	}
+	70% {
+		transform: rotate(-6deg)
+	}
+	80% {
+		transform: rotate(-10deg)
+	}
+	90% {
+		transform: rotate(-6deg)
+	}
+	100% {
+		transform: rotate(-2deg)
 	}
 }
