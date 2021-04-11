@@ -452,6 +452,10 @@ mark {
 	font-size: 1.5rem;
 }
 
+.center a {
+	position: relative;
+}
+
 .ghost-mirror {
 	position: relative;
 	text-align: center;
@@ -616,6 +620,10 @@ mark {
 
 	.roach3 {
 		right: -5%;
+	}
+
+	.sandworm {
+		margin-top: -260px;
 	}
 }
 /********************** END 1000PX MIN-WIDTH QUERY ****************************/
