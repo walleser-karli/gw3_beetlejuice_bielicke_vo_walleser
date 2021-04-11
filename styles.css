@@ -458,8 +458,8 @@ mark {
 	#counter {
 		font-size: 5rem
 	}
-	#summoningSpot {
-		margin-bottom: -105px;
+	.contact-logo {
+		margin-top: -65px;
 	}
 }
 
@@ -473,9 +473,6 @@ mark {
 
 	.roach3 {
 		right: -5%;
-	}
-	#summoningSpot {
-		margin-bottom: -325px;
 	}
 }
 /********************** END 1000PX MIN-WIDTH QUERY ****************************/
