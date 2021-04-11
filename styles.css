@@ -30,9 +30,62 @@ figure img {
 	width: 100%;
 }
 
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
 /***********************************Slideout***********************************/
 #menu {
 	position: fixed;
+	background-image: url("images/desktop_images/background.jpg");
+	width: 100%;
+	height: 100%;
+	max-width: 256px;
+}
+
+#menu h3 {
+	padding: 15px 5px 0 5px;
+	font-weight: normal;
+	font-size: 1.2rem;
+	width: 80%;
+}
+
+#menu ul {
+	display: flex;
+	height: 100vh;
+	align-items: flex-end;
+}
+
+#menu ul li {
+}
+
+.tombstone-left, .tombstone-right {
+	position: absolute;
+	bottom: 3%;
+}
+
+.tombstone-left {
+	left: -8px;
+	width: 50%;
+}
+
+.tombstone-right {
+	right: -11px;
+	width: 60%;
+}
+
+.glow:hover {
+	animation: glow;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#panel {
+		border-left: 8px groove #5B3E87;
 }
 
 .toggle-button {
@@ -224,7 +277,7 @@ mark {
 .roach2 {
 	transform: rotateZ(87deg);
 	top: 100px;
-	left: -8%;
+	left: 0;
 }
 
 .roach3 {
@@ -247,6 +300,7 @@ mark {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-width:
 }
 
 .center {
@@ -260,7 +314,7 @@ mark {
 	text-align: center;
 	margin: auto;
 	width: 98%;
-	max-width: 1000px;
+	max-width: 800px;
 }
 
 #counter {
@@ -282,8 +336,11 @@ mark {
 	padding: 25px 3%;
 }
 
-button {
+.click-button {
 	font-family: 'IM Fell Double Pica', serif;
+	display: inline-block;
+	background-color: white;
+	color: black;
 	font-size: 2rem;
 	padding: 5px 20px;
 	border-radius: 10px;
@@ -292,7 +349,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.click-button:hover {
 	transform: scale(1.1);
 }
 
@@ -325,6 +382,10 @@ button:hover {
 
 /********************** START 600PX MIN-WIDTH QUERY ***************************/
 @media (min-width: 600px) {
+/* Navigation */
+	.toggle-button {
+		padding: 17px;
+	}
   #homepage {
     background-image: url("images/desktop_images/background.jpg");
     background-size: cover;
@@ -385,8 +446,24 @@ button:hover {
     max-width: 500px;
   }
 
-
+/* Contact Page */
+	#counter {
+		font-size: 5rem
+	}
 }
+
+/********************** START 1000PX MIN-WIDTH QUERY **************************/
+@media (min-width: 1000px) {
+/* Contact Page */
+	.roach1 {
+		top: -5vw;
+	}
+
+	.roach3 {
+		right: -5%;
+	}
+}
+/********************** END 1000PX MIN-WIDTH QUERY ****************************/
 
 /**********************************Animations**********************************/
 /* Sandworm */
@@ -486,5 +563,42 @@ button:hover {
 	}
 	100% {
 		transform: rotate(-2deg)
+	}
+}
+
+/* Nav Tombstone glow */
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0px -1px 1px #aef4af);
+	}
+	10% {
+		filter: drop-shadow(0px -3px 3px #aef4af);
+	}
+  20% {
+    filter: drop-shadow(0px -5px 5px #aef4af);)
+  }
+	30% {
+		filter: drop-shadow(0px -5px 7px #aef4af);)
+	}
+	40% {
+		filter: drop-shadow(0px -5px 9px #aef4af);)
+	}
+	50% {
+		filter: drop-shadow(0px -5px 11px #aef4af);)
+	}
+	60% {
+		filter: drop-shadow(0px -5px 9px #aef4af);)
+	}
+	70% {
+		filter: drop-shadow(0px -5px 7px #aef4af);)
+	}
+	80% {
+		filter: drop-shadow(0px -5px 5px #aef4af);)
+	}
+	90% {
+		filter: drop-shadow(0px -3px 3px #aef4af);
+	}
+	100% {
+		filter: drop-shadow(1px -1px 1px #aef4af);
 	}
 }

@@ -29,13 +29,11 @@
 	<body class = "site">
 
 		<nav id="menu">
-		  <header>
-		    <h2>Menu</h2>
-		  </header>
+			<h3>Remember you can always head home...</h3>
 			<ul>
-				<li><a href = "resume.html">Experience</a></li>
-				<li><a href = "index.html">Home</a></li>
-				<li><a href="contact.html">Summon Today!></a></li>
+				<li><a href = "resume.html"><figure class ="tombstone-left"><img class = "glow" src = "images/mobile_images/tombstone_left.png" width = "200" title = "Experience" alt = "A tombstone labeled 'Experience'" /></figure></a></li>
+				<li><a href = "index.html"><figure class ="home-beetlejuice"><img src = "images/mobile_images/beetlejuice.png" width = "200" title = "Home" alt = "Betelgeuse sitting in a stone throne" /></figure></a></li>
+				<li><a href="contact.html"><figure class ="tombstone-right"><img class = "glow" src = "images/mobile_images/tombstone_right.png" width = "200" title = "Summon Today!" alt = "A tombstone labeled 'Summon Today!'" /></figure></a></li>
 			</ul>
 		</nav>
 
@@ -43,32 +41,34 @@
 		<main id = "panel" class="site-content">
 				<div id = "wallpaper" class = "contact-content">
 					<div class = "flex-wrapper">
-						<figure class="toggle-button"><img src = "images/nav-skull.png" width = "81" title = "Navigation Skull"/> </figure>
+						<header>
+							<figure class="toggle-button"><img src = "images/nav-skull.png" width = "81" title = "Navigation Skull"/> </figure>
 
-						<h1><figure class = "contact-logo"><img "contact-logo-img" src = "images/contact-logo.png" width = "767" title = "Contact Betelgeuse" alt = "'Betelgeuse Contact Form' logo" /></figure></h1>
+							<figure class = "contact-logo"><h1><img class = "contact-logo-img" src = "images/contact-logo.png" width = "767" title = "Contact Betelgeuse" alt = "'Betelgeuse Contact Form' logo" /></h1></figure>
+						</header>
 
 						<figure class = "roach roach1"><img src = "images/roach.png" width = 300 title = "Cockroach" alt = "A cockroach" /></figure>
 						<figure class = "roach roach2"><img src = "images/roach.png" width = 300 title = "Cockroach" alt = "A cockroach" /></figure>
 						<figure class = " roach roach3"><img src = "images/roach.png" width = 300 title = "Cockroach" alt = "A cockroach" /></figure>
 
-						<audio id="callAudio" autobuffer>
+						<audio id="callAudio">
 							<source src="audio/betelgeuse.ogg" type="audio/ogg">
 							<source src="audio/belelgeuse.mp3" type="audio/mpeg">
 							Your browser does not support the audio element.
 						</audio>
-						<audio id ="showTimeAudio" autobuffer>
-							<source src='audio/showtime.ogg' type='audio/ogg'></source>
-							<source src='audio/showtime.mp3' type='audio/mpeg'></source>
+						<audio id ="showTimeAudio">
+							<source src='audio/showtime.ogg' type='audio/ogg' />
+							<source src='audio/showtime.mp3' type='audio/mpeg' />
 						</audio>
 
 						<div id = "contact-form" class="center">
 							<figure class = "ghost-mirror">
-								<img id = "mirror" src = "images/mirror.png." width = "1000" title = "Summoning Mirror" alt = "A dark and creepy mirror" />
+								<img id = "mirror" src = "images/mirror.png." width = "800" title = "Summoning Mirror" alt = "A dark and creepy mirror" />
 								<div class= "center" id="counter"></div>
 							</figure>
 							<div id = "summoningSpot">
 								<p>Though we caution you be wary, <br>If you'd venture someplace scary <br>Turn these ghostly hauntings loose. <br> Call three times...</p>
-								<a id = "clickable"><button onclick = "playAudio()" type = "button">Summon!</button></a>
+								<a id = "clickable"><div class = "click-button" onclick = "playAudio()">Summon!</div></a>
 							</div>
 						</div>
 					</div>
