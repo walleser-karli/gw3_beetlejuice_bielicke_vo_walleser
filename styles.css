@@ -288,7 +288,7 @@ mark {
 .contact-logo {
 	margin: auto;
 	width: 98%;
-	max-width: 767px;
+	max-width: 600px;
 	position: relative;
 }
 
@@ -314,7 +314,7 @@ mark {
 	text-align: center;
 	margin: auto;
 	width: 98%;
-	max-width: 800px;
+	max-width: 600px;
 }
 
 #counter {
@@ -396,6 +396,14 @@ mark {
     max-width: 500px;
     margin: 0 auto;
   }
+
+/* Contact Page */
+	.normal-header {
+		margin-bottom: -50px;
+	}
+	#summoningSpot {
+    margin-top: -20px;
+	}
 }
 /********************** END 600PX MIN-WIDTH QUERY ***************************/
 
@@ -450,7 +458,11 @@ mark {
 	#counter {
 		font-size: 5rem
 	}
+	#summoningSpot {
+		margin-bottom: -105px;
+	}
 }
+
 
 /********************** START 1000PX MIN-WIDTH QUERY **************************/
 @media (min-width: 1000px) {
@@ -461,6 +473,9 @@ mark {
 
 	.roach3 {
 		right: -5%;
+	}
+	#summoningSpot {
+		margin-bottom: -325px;
 	}
 }
 /********************** END 1000PX MIN-WIDTH QUERY ****************************/
